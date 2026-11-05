@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- DEPENDENCY RULE (compiler-enforced): may reference Entities and UseCases, never FrameworksDrivers. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PackageTracker.Entities\PackageTracker.Entities.csproj" />
+    <ProjectReference Include="..\PackageTracker.UseCases\PackageTracker.UseCases.csproj" />
+  </ItemGroup>
+</Project>

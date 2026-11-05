@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Dependency-free test runner (no NuGet packages), so it also restores offline. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\PackageTracker.Entities\PackageTracker.Entities.csproj" />
+    <ProjectReference Include="..\..\src\PackageTracker.UseCases\PackageTracker.UseCases.csproj" />
+    <ProjectReference Include="..\..\src\PackageTracker.InterfaceAdapters\PackageTracker.InterfaceAdapters.csproj" />
+    <ProjectReference Include="..\..\src\PackageTracker.FrameworksDrivers\PackageTracker.FrameworksDrivers.csproj" />
+  </ItemGroup>
+</Project>
